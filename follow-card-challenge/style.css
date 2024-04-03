@@ -1,0 +1,104 @@
+:root{
+    --background:#CBD5E1;
+    --main:#FEFCE8;
+    --text:#1E293B;
+}
+@font-face {
+    font-family: Vegur;
+    src: url(fonts/Vegur-Regular.otf)format("opentype");
+}
+@font-face {
+    font-family: Vegur-Light;
+    src: url(fonts/Vegur-Light.otf)format("opentype");
+}
+@font-face {
+    font-family: Vegur-Bold;
+    src: url(fonts/Vegur-Bold.otf)format("opentype");
+}
+
+
+body{
+    height: 100vh;
+    font-family: Vegur;
+    width: 100vw;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    justify-content: center;
+    background-color: var(--main);
+    color: var(--text);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+#text{
+    text-align: right;
+}
+p{
+    margin-top: -15px;
+    font-family: Vegur;
+    font-size: 15;
+}
+img{
+    width: 50px;
+    height: 50px;
+    border-radius: 1rem;
+}
+.inner{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -10px;
+}
+button{
+    background-color: var(--text);
+    color: #FFFFFF;
+    border: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 0.3rem;
+}
+button:hover{
+    cursor: pointer;
+    background-color: #FFFFFF;
+    color:var(--text);
+    border: 2px solid var(--text);
+}
+.icons{
+    display: flex;
+    gap: 10px;
+}
+.icon{
+    padding: 7px;
+    background-color: white;
+    border-radius: 0.5rem;
+    border: .5px solid #E5E7EB;
+
+}
+#text span{
+    font-family: Vegur-Bold;
+}
+svg{
+    fill: #1E293B;
+}
+
+@media (max-width:400px) {
+    main{
+        width: 80vw;
+    }
+    .inner{
+        flex-direction: column;
+        gap: 10px;
+    }
+    #text{
+        text-align: center;
+        margin-top: 5px;
+    }
+}
